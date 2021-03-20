@@ -1,2 +1,3 @@
 file1.txt created in remote
 file1.txt edited in remote
+file1.txt edited in local
