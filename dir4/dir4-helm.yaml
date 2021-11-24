@@ -13,8 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      values: "replicaCount: {{ two }} \n"
+    
     path: helm-guestbook-444
     repoURL: https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
