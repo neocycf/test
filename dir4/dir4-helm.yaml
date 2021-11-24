@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  
+ 
+  
+  name: helm-guestbook-4
+  namespace: argocd
+  
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      values: "replicaCount: {{ two }} \n"
+    path: helm-guestbook-4
+    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    targetRevision: HEAD
