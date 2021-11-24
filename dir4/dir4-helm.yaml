@@ -15,6 +15,6 @@ spec:
   source:
     helm:
       values: "replicaCount: {{ two }} \n"
-    path: helm-guestbook-4
+    path: helm-guestbook
     repoURL: https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
