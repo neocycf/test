@@ -1,1 +1,13 @@
-testfile
+ApiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: myalpine
+  name: myalpine
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999"
+    image: alpine
+    name: myalpine
