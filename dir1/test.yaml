@@ -8,6 +8,3 @@ spec:
   containers:
   - image: alpine
     name: myalpine
-    command:
-    - sleep
-    - "9999"
