@@ -6,5 +6,5 @@ metadata:
   name: myalpine
 spec:
   containers:
-  - image: alpine123
+  - image: alpine
     name: myalpine
