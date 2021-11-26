@@ -20,6 +20,6 @@ spec:
         targetRevision: HEAD
         path: "test/app"
       destination:
-        server: https://kubernetes.default.svc
-        #server: '{{cluster.address}}'
+        #server: https://kubernetes.default.svc
+        server: '{{cluster.address}}'
         namespace: default
