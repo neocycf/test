@@ -21,5 +21,5 @@ spec:
         path: "app"
       destination:
         #server: https://kubernetes.default.svc
-        server: '{{cluster.name}}'
+        server: '{{cluster.address}}'
         namespace: default
