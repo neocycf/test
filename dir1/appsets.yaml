@@ -18,7 +18,7 @@ spec:
       source:
         repoURL: https://github.com/neocycf/test.git
         targetRevision: HEAD
-        path: "test/dir1/app"
+        path: "test/app"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
