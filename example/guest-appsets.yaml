@@ -12,7 +12,7 @@ spec:
       repoURL: https://github.com/neocycf/test.git
       revision: HEAD
       files:
-        - path: "examples/cluster-config/**/config.json"
+      - path: "examples/cluster-config/**/config.json"
   template:
     metadata:
       name: '{{cluster.name}}-guestbook'
