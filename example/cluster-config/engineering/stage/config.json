@@ -1,0 +1,7 @@
+{
+  "cluster": {
+    "owner": "cluster-admin@company.com",
+    "name": "in-cluster",
+    "address": "https://kubernetes.default.svc"
+  }
+}
