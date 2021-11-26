@@ -19,7 +19,8 @@ spec:
         targetRevision: HEAD
         path: "example/apps/guestbook"
       destination:
-        server: https://kubernetes.default.svc
+        #server: https://kubernetes.default.svc
         #server: '{{url}}'
         #server: '{{cluster.address}}'
+        name: '{{cluster.name}}'
         namespace: default
