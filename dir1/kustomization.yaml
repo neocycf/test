@@ -1,7 +1,4 @@
 resources:
-- dir1/appsets.yamlresources:
-- pod.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+- appsets.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
