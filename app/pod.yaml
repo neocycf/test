@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  namespace: default
   labels:
     run: myalpine
   name: myalpine
