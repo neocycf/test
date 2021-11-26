@@ -4,14 +4,16 @@ metadata:
   name: guestbook
 spec:
   generators:
-    - git:
-        repoURL: https://github.com/neocycf/test.git
-        revision: HEAD
-        files:
-        - path: "example/cluster-config/**/config.json"
+  - clusters: {}
+  #  - git:
+  #      repoURL: https://github.com/neocycf/test.git
+  #      revision: HEAD
+  #      files:
+  #      - path: "example/cluster-config/**/config.json"
   template:
     metadata:
-      name: '{{cluster.name}}-guestbook'
+      #name: '{{cluster.name}}-guestbook'
+      name: '{{name}}-guestbook'
     spec:
       project: default
       source:
@@ -20,7 +22,7 @@ spec:
         path: "example/apps/guestbook"
       destination:
         #server: https://kubernetes.default.svc
-        #server: '{{url}}'
+        server: '{{server}}'
         #server: '{{cluster.address}}'
-        name: '{{cluster.name}}'
+        #name: '{{cluster.name}}'
         namespace: default
