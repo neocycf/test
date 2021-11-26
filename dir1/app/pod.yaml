@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: myalpine
+  name: myalpine
+spec:
+  containers:
+  - image: alpine
+    name: myalpine
+    command:
+    - sleep
+    - "9999"
+    
